@@ -8,6 +8,8 @@ from faster_whisper import WhisperModel
 from google import genai
 from google.genai import errors
 
+from glossary import GLOSSARY
+
 load_dotenv()
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
@@ -135,6 +137,8 @@ Requirements:
   supported by context.
 - Do not invent facts when the transcript is uncertain.
 - Keep translations concise because they will be converted to speech.
+- Use these exact Vietnamese terms consistently, never synonyms:
+  {", ".join(GLOSSARY)}.
 - Preserve every start and end timestamp exactly.
 - Do not merge segments.
 - Do not split segments.

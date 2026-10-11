@@ -5,6 +5,7 @@ import math
 import os
 from pathlib import Path
 import re
+import sys
 from types import SimpleNamespace
 import wave
 
@@ -19,6 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent
 INPUT_FILE = BASE_DIR / "dub_blocks.json"
 OUTPUT_DIR = BASE_DIR / "block_tts_output"
 RESULTS_FILE = BASE_DIR / "block_tts_duration_results.json"
+
+# Optional: pass a blocks file (e.g. dub_blocks_fitted.json) to benchmark it.
+# Results then go to a separate file; the audio cache dir stays shared.
+if len(sys.argv) > 1:
+    INPUT_FILE = Path(sys.argv[1]).resolve()
+    RESULTS_FILE = BASE_DIR / "block_tts_duration_results_fitted.json"
 
 
 class DailyQuotaExhausted(Exception):
