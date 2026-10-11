@@ -9,3 +9,8 @@ __pycache__/
 *_analysis.json
 translated_segments.json
 dub_blocks.json
+dub_output/
+block_tts_output*/
+*_fitted.json
+*_fitted_v1.json
+*.mp4
