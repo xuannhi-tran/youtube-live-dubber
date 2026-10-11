@@ -1,0 +1,11 @@
+.venv/
+.env
+__pycache__/
+.history/
+*.wav
+*.mp3
+*_output/
+*_results.json
+*_analysis.json
+translated_segments.json
+dub_blocks.json
