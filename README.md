@@ -6,6 +6,8 @@ It's an offline pipeline, not real-time (the repo name says "live", but it isn't
 
 **Status:** works end to end on a 72-second demo clip. It has not been tested on long videos or other languages.
 
+
+
 ## How it works
 
 ```
@@ -85,6 +87,8 @@ The output goes to `backend/dub_output/`: the dub track, a preview mix, and `dub
 - The word budget depends on the voice and the speaking rate I measured, so it needs recalibrating for another voice.
 - Pronunciation and tone of the TTS voice are as good as Gemini's, and I haven't tuned them.
 - Some wording differs between blocks (for example, "Kitô giáo" vs "Cơ Đốc giáo"). The glossary fixes this for new translations but I haven't regenerated the old ones.
+
+Demo link: https://drive.google.com/file/d/1Hvb74YnhNME6vJmsRZfdhoMJ9yfgouP9/view?usp=drive_link
 
 ## Notes on content
 
