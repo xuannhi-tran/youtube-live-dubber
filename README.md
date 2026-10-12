@@ -2,7 +2,7 @@
 
 A personal prototype that dubs a Chinese video into Vietnamese. I built it because I wanted to watch Chinese knowledge videos without reading subtitles the whole time.
 
-It's an offline pipeline, not real-time (the repo name says "live", but it isn't). You give it a video, wait a few minutes, and get back an MP4 with a Vietnamese voice track.
+It's an offline pipeline, not real-time. You give it a video, wait a few minutes, and get back an MP4 with a Vietnamese voice track.
 
 **Status:** works end to end on a 72-second demo clip. It has not been tested on long videos or other languages.
 
